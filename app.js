@@ -22,6 +22,12 @@ app.use(require("express-session")({
 	saveUninitialized: false
 }));
 
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
+
 //HOME PAGE ROUTE
 app.get('/', function(req, res, next){
 	res.render("index", {title: "FDC"});
