@@ -1,3 +1,13 @@
 body{
 	background-color: #ddd;
 }
+
+/*NAVBAR STYLING*/
+nav.navabar-expand-lg.navbar-light.bg-light{
+	flex-direction: row;
+
+}
+
+.navbar-brand img {
+	height: 40px;
+}

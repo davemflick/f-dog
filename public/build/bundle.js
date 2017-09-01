@@ -22450,10 +22450,10 @@ var Navbar = function (_Component) {
 		value: function render() {
 			return _react2.default.createElement(
 				'nav',
-				{ className: 'navbar navabar-expand sm navbar-light bg-light' },
+				{ className: 'navbar navabar-expand-lg navbar-toggleable-sm navbar-light bg-light justify-content-between' },
 				_react2.default.createElement(
 					'button',
-					{ className: 'navbar-toggler', type: 'button', 'data-toggle': 'collapse' },
+					{ className: 'navbar-toggler', type: 'button', 'data-toggle': 'collapse', 'data-target': '#navbarSupportedContent', 'aria-controls': 'navbarSupportedContent', 'aria-expanded': 'false', 'aria-label': 'Toggle navigation' },
 					_react2.default.createElement('span', { className: 'navbar-toggler-icon' })
 				),
 				_react2.default.createElement(
@@ -22461,7 +22461,7 @@ var Navbar = function (_Component) {
 					{ className: 'collapse navbar-collapse', id: 'navbarSupportedContent' },
 					_react2.default.createElement(
 						'ul',
-						{ className: 'navbar-nav mr-auto' },
+						{ className: 'navbar-nav' },
 						_react2.default.createElement(
 							'li',
 							{ className: 'nav-item active' },
@@ -22503,7 +22503,7 @@ var Navbar = function (_Component) {
 				),
 				_react2.default.createElement(
 					'ul',
-					{ className: 'navbar-nav mr-auto navbar-right' },
+					{ className: 'navbar-nav navbar-right' },
 					_react2.default.createElement(
 						'li',
 						{ className: 'nav-item' },
