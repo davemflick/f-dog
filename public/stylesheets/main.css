@@ -8,6 +8,31 @@ nav.navabar-expand-lg.navbar-light.bg-light{
 
 }
 
-.navbar-brand img {
-	height: 40px;
+.nav-logo img, .nav-brand img {
+	height: 5em;
+}
+
+.nav-logo{
+	position: relative;
+	float: left;
+	top: -50px;
+	right: -50%;
+}
+
+@media screen and (max-width: 767px){
+	.nav-brand.logo-mid{
+		display: inline-block;
+	}
+	.nav-logo{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.nav-brand.logo-mid{
+		display: none;
+	}
+	.nav-logo{
+		display: block;
+	}
 }

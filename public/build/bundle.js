@@ -22449,70 +22449,79 @@ var Navbar = function (_Component) {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
-				'nav',
-				{ className: 'navbar navabar-expand-lg navbar-toggleable-sm navbar-light bg-light justify-content-between' },
+				'div',
+				null,
 				_react2.default.createElement(
-					'button',
-					{ className: 'navbar-toggler', type: 'button', 'data-toggle': 'collapse', 'data-target': '#navbarSupportedContent', 'aria-controls': 'navbarSupportedContent', 'aria-expanded': 'false', 'aria-label': 'Toggle navigation' },
-					_react2.default.createElement('span', { className: 'navbar-toggler-icon' })
-				),
-				_react2.default.createElement(
-					'div',
-					{ className: 'collapse navbar-collapse', id: 'navbarSupportedContent' },
+					'nav',
+					{ className: 'navbar navabar-expand-lg navbar-toggleable-sm navbar-light bg-light justify-content-between' },
 					_react2.default.createElement(
-						'ul',
-						{ className: 'navbar-nav' },
+						'button',
+						{ className: 'navbar-toggler', type: 'button', 'data-toggle': 'collapse', 'data-target': '#navbarSupportedContent', 'aria-controls': 'navbarSupportedContent', 'aria-expanded': 'false', 'aria-label': 'Toggle navigation' },
+						_react2.default.createElement('span', { className: 'navbar-toggler-icon' })
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'collapse navbar-collapse', id: 'navbarSupportedContent' },
 						_react2.default.createElement(
-							'li',
-							{ className: 'nav-item active' },
+							'ul',
+							{ className: 'navbar-nav' },
 							_react2.default.createElement(
-								'a',
-								{ className: 'nav-link', href: '#' },
-								'Home ',
+								'li',
+								{ className: 'nav-item active' },
 								_react2.default.createElement(
-									'span',
-									{ className: 'sr-only' },
-									'(current)'
+									'a',
+									{ className: 'nav-link', href: '#' },
+									'About ',
+									_react2.default.createElement(
+										'span',
+										{ className: 'sr-only' },
+										'(current)'
+									)
+								)
+							),
+							_react2.default.createElement(
+								'li',
+								{ className: 'nav-item' },
+								_react2.default.createElement(
+									'a',
+									{ className: 'nav-link', href: '#' },
+									'Events'
+								)
+							),
+							_react2.default.createElement(
+								'li',
+								{ className: 'nav-item' },
+								_react2.default.createElement(
+									'a',
+									{ className: 'nav-link', href: '#' },
+									'FAQ\'s'
 								)
 							)
-						),
+						)
+					),
+					_react2.default.createElement(
+						'a',
+						{ className: 'nav-brand logo-mid', href: '/' },
+						_react2.default.createElement('img', { src: __webpack_require__(186) })
+					),
+					_react2.default.createElement(
+						'ul',
+						{ className: 'navbar-nav navbar-right' },
 						_react2.default.createElement(
 							'li',
 							{ className: 'nav-item' },
 							_react2.default.createElement(
-								'a',
-								{ className: 'nav-link', href: '#' },
-								'Link'
-							)
-						),
-						_react2.default.createElement(
-							'li',
-							{ className: 'nav-item' },
-							_react2.default.createElement(
-								'a',
-								{ className: 'nav-link disabled', href: '#' },
-								'Disabled'
+								'button',
+								{ className: 'btn btn-primary' },
+								'Shop Now!'
 							)
 						)
 					)
 				),
 				_react2.default.createElement(
 					'a',
-					{ className: 'navbar-brand', href: '/' },
+					{ className: 'nav-logo', href: '/' },
 					_react2.default.createElement('img', { src: __webpack_require__(186) })
-				),
-				_react2.default.createElement(
-					'ul',
-					{ className: 'navbar-nav navbar-right' },
-					_react2.default.createElement(
-						'li',
-						{ className: 'nav-item' },
-						_react2.default.createElement(
-							'button',
-							{ className: 'btn btn-primary' },
-							'Shop Now!'
-						)
-					)
 				)
 			);
 		}
