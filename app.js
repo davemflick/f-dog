@@ -14,6 +14,15 @@ var PhotoGallery = require("./models/photoGallery");
 var Toys = require("./models/toys");
 var User = require("./models/user");
 
+var URL = process.env.DATABASEURL || 'mongodb://localhost/fartingDog';
+mongoose.connect(URL, {useMongoClient: true}, (err)=>{
+	if(err){
+		console.log("Error Connecting to Database, error= " + err);
+	} else {
+		console.log('Mongoose connected to database');
+	}
+});
+
 
 app.set('view engine', 'pug');
 app.use(express.static('public'));
