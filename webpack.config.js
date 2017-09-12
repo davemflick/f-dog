@@ -16,3 +16,6 @@ module.exports = {
 		]
 	},
 }
+
+// { test:/\.html$/, loader: 'html-loader?attrs[]=video:src'},
+// { test: /\.mp4$/, loader: 'url-loader?limit=1000000&mimetype=video/mp4' },
