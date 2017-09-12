@@ -1,8 +1,15 @@
+html{
+	height: 100%;
+}
 body{
 	background-color: #ddd;
 }
 
 /*NAVBAR STYLING*/
+
+.navContainer nav{
+	background-color: #f6f6f6;
+}
 nav.navabar-expand-lg.navbar-light.bg-light{
 	flex-direction: row;
 
@@ -15,7 +22,7 @@ nav.navabar-expand-lg.navbar-light.bg-light{
 .nav-logo{
 	position: relative;
 	float: left;
-	top: -50px;
+	top: -76px;
 	right: -50%;
 }
 
@@ -34,5 +41,28 @@ nav.navabar-expand-lg.navbar-light.bg-light{
 	}
 	.nav-logo{
 		display: block;
+	}
+}
+
+/*BANNER*/
+.bannerContainer, .bannerContaienr img.img-fluid{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES */
+
+@media screen and (min-width: 768px){
+	.navContainer nav{
+		padding-top:26px;
+	}
+	.bannerContainer img.img-fluid{
+		margin-top: -80px;
 	}
 }
