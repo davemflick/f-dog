@@ -6,8 +6,14 @@ var passport       = require('passport');
 var express        = require('express');
 var app            = express();
 
-
+//Gets rid of mongoose promise console warning/error
 mongoose.Promise = global.Promise;
+
+//Models
+var PhotoGallery = require("./models/photoGallery");
+var Toys = require("./models/toys");
+var User = require("./models/user");
+
 
 app.set('view engine', 'pug');
 app.use(express.static('public'));
