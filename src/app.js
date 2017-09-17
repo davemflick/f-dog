@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Navbar from './components/Navbar';
-import Banner from './components/Banner';
-import Video from './components/Video';
+import ReactRoutes from './containers/ReactRoutes';
+
+
 
 const App = function(){
 	return(
 		<div>
 			<Navbar />
-			<Banner />
-			<h1 className="titleHeader"> The Farting Dog Company </h1>
-			<Video />
+			<ReactRoutes />
 		</div>
 	)
 }
