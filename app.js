@@ -48,6 +48,42 @@ app.get('/', function(req, res, next){
 	res.render("index", {title: "FDC"});
 });
 
+app.get('/error', function(req, res, next){
+	res.render("/error");
+})
+
+app.get('/admin/create', function(req, res, next){
+	res.render("create");
+});
+
+app.post('/admin/create-new', function(req, res, next){
+
+	let newToy = {name:req.body.name,
+	 description: req.body.description,
+	 price: req.body.price,
+	 colors: [req.body.colors],
+	 images: [req.body.images] };
+
+	Toys.create(newToy, function(err, brand){
+		if(err){
+			console.log(err);
+			res.redirect("/error");
+		} else{
+			res.redirect("/");
+		}
+	})
+})
+
+app.get('/get-toys', function(req, res, next){
+	Toys.find({}, function(err, toy){
+		if(err){
+			console.log(err)
+		} else{
+			res.json({toy: toy})
+		}
+	})
+})
+
 
 app.listen(process.env.PORT || 3000, process.env.IP, ()=>{
 	console.log("Farting Dog Express Server Is Up");
