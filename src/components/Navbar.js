@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import ReactDrom from 'react-dom'
+import ReactDrom from 'react-dom';
+import Social from './Social';
 
 export default class Navbar extends Component{
 	render(){
 		return(
 			<div className="navContainer">
+			<Social />
 			<nav className='navbar navabar-expand-lg navbar-toggleable-sm navbar-light bg-light justify-content-between'>
 			  <button className='navbar-toggler' type='button' data-toggle='collapse' data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			    <span className="navbar-toggler-icon"></span>
