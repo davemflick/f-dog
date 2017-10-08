@@ -2,13 +2,23 @@ html{
 	height: 100%;
 }
 body{
-	background-color: #ddd;
+	background-color: #fff;
 }
 
 /*NAVBAR STYLING*/
 
+.social-icons{
+	width: 100%;
+	background-color: rgba(0,0,0,0);
+	text-align: right;
+	padding: .5rem 1rem;
+}
+.social-icons a i{
+	margin-left: 12px;
+}
+
 .navContainer nav{
-	background-color: #f6f6f6;
+	background-color: #fff;
 	font-family: 'Handlee', cursive;
 }
 nav.navabar-expand-lg.navbar-light.bg-light{
@@ -59,32 +69,29 @@ nav.navabar-expand-lg.navbar-light.bg-light{
 
 /*VIDEO CONTAINER*/
 
-.videoContainer{
+.video-container{
 	width: 100%;
-	background-color: #333;
-	padding: 10px 1em;
+	background-color: #E6DFCD;
+	padding: 30px 1em;
 }
 
-.videoDiv{
-	position: relative;
-	height: 0;
-	padding-bottom: 56.25%;
-	max-width: 900px;
-	margin: 0 auto;
+.video-info{
+	text-align: center;
+	color: #D58668;
+	padding: 15px;
 }
 
-.videoDiv iframe{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	max-width: 900px;
-}
 
+/* CREATE TOY PAGE*/
+
+.create-toy-form input, .create-toy-form textarea{
+ display: block;
+ margin: 20px;
+}
 /*MEDIA QUERIES */
 @media screen and (max-width: 835px){
 	.banText{
-		top: 230px;
+		top: 250px;
 		left: 25px;
 	}
 	.banText h3{
@@ -127,7 +134,7 @@ nav.navabar-expand-lg.navbar-light.bg-light{
 
 @media screen and (max-width: 530px){
 	.banText{
-		top: 200px;
+		top: 260px;
 		left: 10px;
 	}
 	.banText h3{
