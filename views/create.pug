@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	form( class="create-toy-form" action="/admin/create-new", method="POST")
+		input(type="text", name="name", placeholder="Name")
+		textarea(name="description", placeholder="Description")
+		input(type="text", name="price", placeholder="Price")
+		input(type="text", name="images", placeholder="Image")
+		input(type="text", name="colors", placeholder="Colors")
+		input(class="btn btn-primary" type="submit")
