@@ -48,6 +48,10 @@ app.get('/', function(req, res, next){
 	res.render("index", {title: "FDC"});
 });
 
+app.get('/toys', function(req, res, next){
+	res.render("index", {title: "Toys - FDC"})
+})
+
 app.get('/error', function(req, res, next){
 	res.render("/error");
 })
