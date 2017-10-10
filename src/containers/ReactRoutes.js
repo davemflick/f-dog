@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import axios from 'axios';
 import HomePage from './HomePage';
 import AllToys from './AllToys';
+import CreateNewToy from '../components/CreateNewToy';
 
 class ReactRoutes extends Component{
 	constructor(props){
@@ -27,7 +28,8 @@ class ReactRoutes extends Component{
 			<Router>
 			  <Switch>
 			    <Route path="/" exact component={HomePage} />
-			    <Route path="/toys" exact component={AllToys} />
+			    <Route path="/toys" render={(props)=> <AllToys toys={this.state.toys} />} />
+			    <Route path="/admin/create" exact component={CreateNewToy} />
 			  </Switch>
 			</Router>
 		)
