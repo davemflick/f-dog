@@ -81,13 +81,12 @@ nav.navabar-expand-lg.navbar-light.bg-light{
 	padding: 15px;
 }
 
-
+/* ALL TOYS PAGE */
+.single-toy img{
+  max-width: 100%;
+}
 /* CREATE TOY PAGE*/
 
-.create-toy-form input, .create-toy-form textarea{
- display: block;
- margin: 20px;
-}
 /*MEDIA QUERIES */
 @media screen and (max-width: 835px){
 	.banText{
