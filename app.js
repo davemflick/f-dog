@@ -57,7 +57,7 @@ app.get('/error', function(req, res, next){
 })
 
 app.get('/admin/create', function(req, res, next){
-	res.render("create");
+	res.render("index");
 });
 
 app.post('/admin/create-new', function(req, res, next){
