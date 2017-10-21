@@ -12,7 +12,6 @@ export default class AllToys extends Component{
 
 	componentWillReceiveProps(nextProps){
 		if(nextProps != this.props){
-	
 			this.setState(nextProps);
 		}
 	}
@@ -24,7 +23,7 @@ export default class AllToys extends Component{
 				<div className="single-toy col-md-6" key={"t-" + i}>
 					<h2> {t.name}</h2>
 					<p> {t.description} </p>
-					<img className="img img-fluid" src={require("../../public/images/toys/" + t.images[0])} />
+					<img className="img img-fluid"  src={t.images[0]} />
 				</div>
 			)
 		});
