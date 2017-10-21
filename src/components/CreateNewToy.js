@@ -15,12 +15,6 @@ const CreateNewToy = function(){
 		    <input type="text" name="price" placeholder="Price" />
 		  </div>
 		  <div className="form-group">
-		    <div className="form-check">
-		  	  <label className="form-check-label">
-		        <input type="checkbox" name="name" placeholder="Name" />
-		          {" Is this a Local Image"}
-		      </label>
-			</div>
 		    <input type="text" name="images" required placeholder="Image" />
 		  </div>
 		  <div className="form-group">
