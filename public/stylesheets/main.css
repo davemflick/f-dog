@@ -87,6 +87,10 @@ nav.navabar-expand-lg.navbar-light.bg-light{
 }
 /* CREATE TOY PAGE*/
 
+.create-toy-form{
+	display: inline-block;
+	margin: 0 auto;
+}
 /*MEDIA QUERIES */
 @media screen and (max-width: 835px){
 	.banText{
