@@ -61,17 +61,20 @@ app.get('/admin/create', function(req, res, next){
 });
 
 app.post('/admin/create-new', function(req, res, next){
-
+	let local = false;
+	if(req.body.local === 'on'){ local = true;}
 	let newToy = {name:req.body.name,
 	 description: req.body.description,
 	 price: req.body.price,
 	 colors: [req.body.colors],
+	 localImages: local,
 	 images: [req.body.images] };
+	 console.log(newToy)
 
 	Toys.create(newToy, function(err, brand){
 		if(err){
 			console.log(err);
-			res.redirect("/error");
+			res.render("error");
 		} else{
 			res.redirect("/");
 		}
