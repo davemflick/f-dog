@@ -6,6 +6,7 @@ var dogToySchema = new mongoose.Schema(
 	description: String,
 	price: Number,
 	colors: {type: Array, default:[]},
+	localImages: Boolean,
 	images: {type:Array, default:[]},
 	timestamp: {type: Date, default: Date.now}
 });
