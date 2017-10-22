@@ -9,7 +9,7 @@ body{
 
 .social-icons{
 	width: 100%;
-	background-color: rgba(0,0,0,0);
+	background-color: #fff;
 	text-align: right;
 	padding: .5rem 1rem;
 }
@@ -38,6 +38,17 @@ nav.navabar-expand-lg.navbar-light.bg-light{
 }
 
 /*BANNER*/
+
+.fixed-banner{
+	background: url("../images/gallery/charlie-banner.jpeg") no-repeat;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	z-index: -1000;
+	width: 100%;
+	height: 650px;
+}
+
 .bannerContainer, .bannerContaienr img.img-fluid{
 	width: 100%;
 }
@@ -47,8 +58,8 @@ nav.navabar-expand-lg.navbar-light.bg-light{
 	position: absolute;
 	left: 50px;
 	top: 270px;
-	-ms-transform: rotate(-12deg); /* IE 9 */
-    -webkit-transform: rotate(-12deg); /* Safari */
+	-ms-transform: rotate(-12deg); 
+    -webkit-transform: rotate(-12deg); 
     transform: rotate(-12deg);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -58,6 +69,7 @@ nav.navabar-expand-lg.navbar-light.bg-light{
     text-shadow: 2px 2px 1px black;
 }
 
+
 .titleHeader{
 	margin-top: -65px;
 	text-align: center;
@@ -66,31 +78,102 @@ nav.navabar-expand-lg.navbar-light.bg-light{
 	text-shadow: 1px 1px 1px white;
 	margin-bottom: 0;
 }
-
+/*---------HOME PAGE------------*/
 /*VIDEO CONTAINER*/
 
 .video-container{
 	width: 100%;
-	background-color: #E6DFCD;
-	padding: 30px 1em;
+	background-color: rgba(255,255,255,0.3);
+	padding: 45px 0;
 }
 
-.video-info{
+/* Home-Info */
+.home-info{
 	text-align: center;
-	color: #D58668;
-	padding: 15px;
+	padding: 45px 0;
+	background-color: #aaa;
+	color: #fff;
+	text-shadow: 2px 2px 2px #000;
 }
 
-/* ALL TOYS PAGE */
-.single-toy img{
-  max-width: 100%;
+/* ------------ ALL TOYS PAGE ------------ */
+.single-toy{
+  padding: 20px;
+  margin: 20px auto;
+  border: 2px solid #000;
+  border-radius: 20px;
+  text-align: center;
 }
-/* CREATE TOY PAGE*/
+
+.single-toy img{
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+/* ------ CREATE TOY PAGE ----------*/
 
 .create-toy-form{
 	display: inline-block;
 	margin: 0 auto;
 }
+
+/*--------- PHOTO GALLERY ------------*/
+   #fancy-wrap .col-md-4 {
+	padding: 15px;
+  }
+  #fancy-wrap .img-gallery {
+	image-rendering: -webkit-optimize-contrast;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 5px;
+	height: 300px;
+	width: 100%;
+	z-index: 10;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+  }
+  #fancy-wrap .img-gallery:hover {
+	box-shadow: 0 0 20px 0 rgba(0,0,0,1);
+  }
+  .fancybox-image {
+	box-shadow: 0 0 20px #000;
+  }
+
+/* FOOTER */
+#footer{
+	padding: 0;
+	background: #fff;
+}
+#footer .main-foot{
+	padding: 35px 0;
+}
+
+#footer .footer-social{
+	text-align: center;
+}
+#footer ul{
+	list-style: none;
+	text-align: right;
+}
+#footer ul li{
+	margin-bottom: 15px;
+}
+
+#footer .copyright{
+	text-align: center;
+	width: 100%;
+	background-color: #006AD2;
+	color: #fff;
+	padding: 10px 0;
+	margin: 0;
+}
+.copyright p{
+	margin: 0;
+}
+
 /*MEDIA QUERIES */
 @media screen and (max-width: 835px){
 	.banText{
@@ -134,11 +217,24 @@ nav.navabar-expand-lg.navbar-light.bg-light{
 		margin-top: -50px;
 	}
 }
+@media screen and (max-width: 575px){
+	#footer{
+		text-align: center;
+	}
+	#footer h2{
+		margin-bottom: 25px;
+	}
+	#footer #footer-social .social-icons{
+		text-align: center;
+	}
+	#footer ul{
+		text-align: center;
+	}
+}
 
 @media screen and (max-width: 530px){
 	.banText{
-		top: 260px;
-		left: 10px;
+		display: none;
 	}
 	.banText h3{
 		font-size: 0.9em;
