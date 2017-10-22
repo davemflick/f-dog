@@ -35,7 +35,7 @@ export default class Navbar extends Component{
 			  </a>
 			   <ul className='navbar-nav navbar-right'>
 			     <li className='nav-item'>
-			       <button className='btn btn-primary'>Shop Now!</button>
+			       <a className='btn btn-primary' href="https://www.amazon.com/Gilbert-Farting-Giraffe-Dog-Insert/dp/B075FG74FH/ref=sr_1_1?ie=UTF8&qid=1508681283&sr=8-1&keywords=The+Farting+Dog+Company" title="Go To Amazon" target="_blank">Shop Now!</a>
 			     </li>
 			   </ul>
 			</nav>
